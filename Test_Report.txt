@@ -1,0 +1,31 @@
+Assignment 6 - Local Test Report
+Student: Eng. Dhafer Alyaari
+Run: Python 3.13 on Linux with local-only test servers and mocks.
+
+test_closed_port (test_banner_grabber.BannerTests.test_closed_port) ... ok
+test_connect_timeout_no_crash (test_banner_grabber.BannerTests.test_connect_timeout_no_crash) ... ok
+test_empty_banner (test_banner_grabber.BannerTests.test_empty_banner) ... ok
+test_first_banner_line (test_banner_grabber.BannerTests.test_first_banner_line) ... ok
+test_ftp_mock (test_banner_grabber.BannerTests.test_ftp_mock) ... ok
+test_http_mock (test_banner_grabber.BannerTests.test_http_mock) ... ok
+test_http_restricted_to_1024 (test_banner_grabber.BannerTests.test_http_restricted_to_1024) ... ok
+test_http_split_packets (test_banner_grabber.BannerTests.test_http_split_packets) ... ok
+test_invalid_utf8 (test_banner_grabber.BannerTests.test_invalid_utf8) ... ok
+test_main_invalid_timeout (test_banner_grabber.BannerTests.test_main_invalid_timeout) ... ok
+test_main_prints_status (test_banner_grabber.BannerTests.test_main_prints_status) ... ok
+test_open_no_banner (test_banner_grabber.BannerTests.test_open_no_banner) ... ok
+test_port_limit (test_banner_grabber.BannerTests.test_port_limit) ... ok
+test_ports_duplicate (test_banner_grabber.BannerTests.test_ports_duplicate) ... ok
+test_ports_out_of_range (test_banner_grabber.BannerTests.test_ports_out_of_range) ... ok
+test_ports_simple (test_banner_grabber.BannerTests.test_ports_simple) ... ok
+test_receive_timeout_no_crash (test_banner_grabber.BannerTests.test_receive_timeout_no_crash) ... ok
+test_server_header (test_banner_grabber.BannerTests.test_server_header) ... ok
+test_ssh_mock (test_banner_grabber.BannerTests.test_ssh_mock) ... ok
+test_unresolvable_host (test_banner_grabber.BannerTests.test_unresolvable_host) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.329s
+
+OK
+
+Windows executable has not yet been built or executed. GitHub Actions is configured to do that on Windows.

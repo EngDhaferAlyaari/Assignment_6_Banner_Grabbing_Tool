@@ -1,0 +1,29 @@
+ASSIGNMENT 6 - FAST GITHUB UPLOAD FROM ANDROID
+Student: Eng. Dhafer Alyaari
+
+Repository name: Assignment_6_Banner_Grabbing_Tool
+Description: Assignment 6 - Banner Grabbing Tool in Python by Eng. Dhafer Alyaari.
+Set visibility to Public and do NOT auto-create a README.
+
+1. Extract this ZIP and upload the project files using GitHub > Add file > Upload files.
+2. The build workflow MUST be stored in this exact path:
+   .github/workflows/build-windows.yml
+   The ZIP already contains that correct directory structure. On Android,
+   if the browser uploads only build-windows.yml to the root of the repo,
+   open that file on GitHub, choose Edit, rename it to the full path above,
+   and commit. Leave its code unchanged.
+3. On GitHub, open Actions > Build Windows EXE. A build starts automatically
+   after a commit that adds the workflow in the correct place.
+4. If the build is green, look for Banner_Grabber.exe in the repository.
+   If it is not present, the file is available in Actions > Artifacts;
+   download the ZIP, extract the EXE, and upload it to the repository.
+   Automatic addition can fail if repository workflow permissions prevent pushes.
+5. Check that the repository is PUBLIC and README, .py, tests and .exe appear.
+   Only then send the repository URL to the trainer.
+
+Repository URL (after you create it):
+https://github.com/EngDhaferAlyaari/Assignment_6_Banner_Grabbing_Tool
+
+NOTE: The ZIP itself is not an executable. Windows EXE is built by
+GitHub Actions, not by this ZIP. Use the program only against hosts you
+own or have permission to test.

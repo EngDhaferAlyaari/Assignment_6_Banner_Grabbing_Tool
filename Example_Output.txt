@@ -1,0 +1,13 @@
+Assignment 6 - Local demonstration output. Ports are random and will change.
+
+Local demonstration only - 127.0.0.1
+------------------------------------------------
+SSH (mock) | Port 55937: OPEN
+  Banner: SSH-2.0-OpenSSH_9.6
+FTP (mock) | Port 55903: OPEN
+  Banner: 220 (vsFTPd 3.0.5)
+HTTP (mock) | Port 43765: OPEN
+  Banner: HTTP/1.1 200 OK
+  Server: Apache/2.4.62
+------------------------------------------------
+Demo completed.
