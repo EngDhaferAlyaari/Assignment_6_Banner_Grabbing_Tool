@@ -120,12 +120,12 @@ class BannerTests(unittest.TestCase):
                              ("OPEN", "No banner received", ""))
 
     def test_closed_port(self):
-        probe = socket.socket()
-        probe.bind(("127.0.0.1", 0))
-        port = probe.getsockname()[1]
-        probe.close()
-        status = scan_port("127.0.0.1", port, 0.3, "passive")[0]
-        self.assertIn(status, ("CLOSED", "ERROR"))
+        # A free local port may time out instead of refusing on some systems.
+        # Simulate the refused connection to check the CLOSED status reliably.
+        with patch("banner_grabber.socket.create_connection",
+                   side_effect=ConnectionRefusedError("Connection refused")):
+            self.assertEqual(scan_port("127.0.0.1", 65000, 0.3, "passive")[0],
+                             "CLOSED")
 
     def test_receive_timeout_no_crash(self):
         with LocalService(b"Never sent", delay=0.3) as service:
